@@ -1,6 +1,6 @@
 # 🍃 UIView (HoverEvents)
 
-Super easy hover gesture support for UIView
+Super easy hover gesture support for UIView (and UIView subclasses!)
 
 # Compatability:
 
