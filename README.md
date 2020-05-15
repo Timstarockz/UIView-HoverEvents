@@ -9,7 +9,7 @@ Super easy hover gesture support for UIView (and UIView subclasses!)
 
 # Usage:
 
-### Enable touch events by simply setting a BOOL on your UIView subclass!
+### Enable hover events by simply setting a BOOL on your UIView subclass!
 
 Swift (from [**ColorView.swift**](https://github.com/Timstarockz/UIView-HoverEvents/blob/master/HoverEvents/Demo/Custom%20Views/ColorView.swift)):
 
@@ -33,7 +33,7 @@ Objective-C:
 }
 ```
 
-### You can also track the cursors position IN the view!
+### You can also easily track the cursors position IN the view!
 
 Swift (from [**TrackingView.swift**](https://github.com/Timstarockz/UIView-HoverEvents/blob/master/HoverEvents/Demo/Custom%20Views/TrackingView.swift)):
 
