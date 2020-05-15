@@ -89,4 +89,7 @@ Objective-C:
 
 The demo app is built with Storyboards and the custom views are setup in [**ViewController.swift**](https://github.com/Timstarockz/UIView-HoverEvents/blob/master/HoverEvents/Demo/ViewController.swift)
 
+Also here's a video demo I posted on my twitter:
+[https://twitter.com/timdesir/status/1261178820335263744
+](https://twitter.com/timdesir/status/1261178820335263744)
 ### Build, run, have fun!
