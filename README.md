@@ -1,4 +1,4 @@
-# 🍃 UIView (HoverEvents)
+# 🍃 UIView ([HoverEvents](https://github.com/Timstarockz/UIView-HoverEvents/blob/master/HoverEvents/UIView%2BHoverEvents.h))
 
 Super easy hover gesture support for UIView (and UIView subclasses!)
 
@@ -55,6 +55,30 @@ override func cursorHoverCancelled(_ pointInView: CGPoint) {
 }
 
 override func cursorHoverFailed(_ pointInView: CGPoint) {
+	// ...
+}
+```
+
+Objective-C:
+
+```objective-c
+- (void)cursorHoverBegan:(CGPoint)pointInView {
+	// ...
+}
+
+- (void)cursorHoverChanged:(CGPoint)pointInView {
+	// ...
+}
+
+- (void)cursorHoverEnded:(CGPoint)pointInView {
+	// ...
+}
+
+- (void)cursorHoverCancelled:(CGPoint)pointInView {
+	// ...
+}
+
+- (void)cursorHoverFailed:(CGPoint)pointInView {
 	// ...
 }
 ```
