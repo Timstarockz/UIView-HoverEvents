@@ -15,10 +15,10 @@ Swift (from [**ColorView.swift**](https://github.com/Timstarockz/UIView-HoverEve
 
 ```swift
 override func awakeFromNib() {
-		super.awakeFromNib()
+	super.awakeFromNib()
 		
-		// just one line of code!
-		self.tracksHoverEvents = true
+	// just one line of code!
+	self.tracksHoverEvents = true
 }
 ```
 
