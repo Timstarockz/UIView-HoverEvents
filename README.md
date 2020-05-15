@@ -29,7 +29,7 @@ Objective-C:
 	[super awakeFromNib];
 	
 	// still just one line of code!
-	self.tracksHoverEvents = true;
+	[self setTracksHoverEvents:true];
 }
 ```
 
