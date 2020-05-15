@@ -29,7 +29,7 @@ Objective-C:
 	[super awakeFromNib];
 	
 	// still just one line of code!
-	[self setTracksHoverEvents:true];
+	[self setTracksHoverEvents:YES];
 }
 ```
 
@@ -70,7 +70,7 @@ self.hoveringBackgroundColor = UIColor.systemTeal
 Objective-C:
 
 ```objective-c
-[self setHoveringBackgroundColor:[UIColor systemTeal]];
+[self setHoveringBackgroundColor:[UIColor systemTealColor]];
 ```
 
 ### Don't forget to import the header file in your [Bridging Header](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift) if you're using Swift!
