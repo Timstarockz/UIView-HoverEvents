@@ -13,6 +13,10 @@
 		22D5843C246E527E00FDAC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D5843A246E527E00FDAC03 /* Main.storyboard */; };
 		22D5843E246E528200FDAC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D5843D246E528200FDAC03 /* Assets.xcassets */; };
 		22D58441246E528200FDAC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D5843F246E528200FDAC03 /* LaunchScreen.storyboard */; };
+		22D5844C246E52AB00FDAC03 /* UIView+HoverEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D5844B246E52AB00FDAC03 /* UIView+HoverEvents.m */; };
+		22D58453246E560800FDAC03 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D58452246E560800FDAC03 /* ColorView.swift */; };
+		22D58455246E56B800FDAC03 /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D58454246E56B800FDAC03 /* TrackingView.swift */; };
+		22D58457246E571E00FDAC03 /* BigBoxCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D58456246E571E00FDAC03 /* BigBoxCursor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,13 @@
 		22D5843D246E528200FDAC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22D58440246E528200FDAC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22D58442246E528200FDAC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D58449246E52AA00FDAC03 /* HoverEvents-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HoverEvents-Bridging-Header.h"; sourceTree = "<group>"; };
+		22D5844A246E52AB00FDAC03 /* UIView+HoverEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HoverEvents.h"; sourceTree = "<group>"; };
+		22D5844B246E52AB00FDAC03 /* UIView+HoverEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HoverEvents.m"; sourceTree = "<group>"; };
+		22D5844E246E533300FDAC03 /* HoverEvents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HoverEvents.entitlements; sourceTree = "<group>"; };
+		22D58452246E560800FDAC03 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		22D58454246E56B800FDAC03 /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
+		22D58456246E571E00FDAC03 /* BigBoxCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBoxCursor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +67,46 @@
 		22D58433246E527E00FDAC03 /* HoverEvents */ = {
 			isa = PBXGroup;
 			children = (
+				22D58449246E52AA00FDAC03 /* HoverEvents-Bridging-Header.h */,
+				22D5844A246E52AB00FDAC03 /* UIView+HoverEvents.h */,
+				22D5844B246E52AB00FDAC03 /* UIView+HoverEvents.m */,
+				22D58450246E537800FDAC03 /* Demo */,
+				22D58451246E53AD00FDAC03 /* Resources */,
+			);
+			path = HoverEvents;
+			sourceTree = "<group>";
+		};
+		22D5844F246E536C00FDAC03 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				22D58452246E560800FDAC03 /* ColorView.swift */,
+				22D58454246E56B800FDAC03 /* TrackingView.swift */,
+				22D58456246E571E00FDAC03 /* BigBoxCursor.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		22D58450246E537800FDAC03 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
 				22D58434246E527E00FDAC03 /* AppDelegate.swift */,
 				22D58436246E527E00FDAC03 /* SceneDelegate.swift */,
 				22D58438246E527E00FDAC03 /* ViewController.swift */,
+				22D5844F246E536C00FDAC03 /* Custom Views */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		22D58451246E53AD00FDAC03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				22D5843A246E527E00FDAC03 /* Main.storyboard */,
 				22D5843D246E528200FDAC03 /* Assets.xcassets */,
 				22D5843F246E528200FDAC03 /* LaunchScreen.storyboard */,
+				22D5844E246E533300FDAC03 /* HoverEvents.entitlements */,
 				22D58442246E528200FDAC03 /* Info.plist */,
 			);
-			path = HoverEvents;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +141,7 @@
 				TargetAttributes = {
 					22D58430246E527E00FDAC03 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -138,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D5844C246E52AB00FDAC03 /* UIView+HoverEvents.m in Sources */,
+				22D58457246E571E00FDAC03 /* BigBoxCursor.swift in Sources */,
+				22D58455246E56B800FDAC03 /* TrackingView.swift in Sources */,
 				22D58439246E527E00FDAC03 /* ViewController.swift in Sources */,
 				22D58435246E527E00FDAC03 /* AppDelegate.swift in Sources */,
 				22D58437246E527E00FDAC03 /* SceneDelegate.swift in Sources */,
+				22D58453246E560800FDAC03 /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,17 +331,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HoverEvents/Resources/HoverEvents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQQQVH6Y8N;
-				INFOPLIST_FILE = HoverEvents/Info.plist;
+				INFOPLIST_FILE = HoverEvents/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tim.HoverEvents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HoverEvents/HoverEvents-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -302,17 +354,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HoverEvents/Resources/HoverEvents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQQQVH6Y8N;
-				INFOPLIST_FILE = HoverEvents/Info.plist;
+				INFOPLIST_FILE = HoverEvents/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tim.HoverEvents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HoverEvents/HoverEvents-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
