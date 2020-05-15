@@ -9,7 +9,7 @@ Super easy hover gesture support for UIView (and UIView subclasses!)
 
 # Usage:
 
-### 0️⃣ Enable hover events by simply setting a BOOL on your UIView subclass!
+### 0️⃣: Enable hover events by simply setting a BOOL on your UIView subclass!
 
 Swift (from [**ColorView.swift**](https://github.com/Timstarockz/UIView-HoverEvents/blob/master/HoverEvents/Demo/Custom%20Views/ColorView.swift)):
 
@@ -33,7 +33,7 @@ Objective-C:
 }
 ```
 
-### 1️⃣ You can also easily track the cursors position IN the view!
+### 1️⃣: You can also easily track the cursors position IN the view!
 
 Swift (from [**TrackingView.swift**](https://github.com/Timstarockz/UIView-HoverEvents/blob/master/HoverEvents/Demo/Custom%20Views/TrackingView.swift)):
 
@@ -59,7 +59,7 @@ override func cursorHoverFailed(_ pointInView: CGPoint) {
 }
 ```
 
-### 2️⃣ There's also simple support for highlighting a view when it's being hovered:
+### 2️⃣: There's also simple support for highlighting a view when it's being hovered:
 
 Swift:
 
@@ -73,7 +73,7 @@ Objective-C:
 [self setHoveringBackgroundColor:[UIColor systemTealColor]];
 ```
 
-### 3️⃣ Don't forget to import the header file in your [Bridging Header](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift) if you're using Swift!
+### 3️⃣: Don't forget to import the header file in your [Bridging Header](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift) if you're using Swift!
 
 (from [HoverEvents-Bridging-Header.h](https://github.com/Timstarockz/UIView-HoverEvents/blob/master/HoverEvents/HoverEvents-Bridging-Header.h)):
 
